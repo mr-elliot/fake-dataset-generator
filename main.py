@@ -8,7 +8,7 @@ def data_info():
     print("\nEnter only string/integer/float")
     col_features = list(map(str, (input("What date type u need for {} column? ".format(name)).lower() for name in col_names)))
     noise = True if (input("\nDo u need NULL value in dataset? yes/no ").lower()) == "yes" else False
-    noise_lvl = int(input("Enter the noise percent of noise you need 0-100 ")) if noise else 10
+    noise_lvl = int(input("Enter the noise percent of noise you need 0-100 ")) if noise else 1
     sl_no = True if input("Do you want to add serial number? yes/no ").lower() == 'yes' else False
 
     if sl_no:
